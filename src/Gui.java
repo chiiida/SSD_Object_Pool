@@ -16,7 +16,7 @@ public class Gui extends JFrame implements Observer {
         game.addObserver(this);
 
         renderer = new Renderer();
-        renderer.addMouseListener(new Controller());
+        renderer.addMouseListener(new Controller());/**/
 
         setLayout(new BorderLayout());
         add(renderer);
@@ -67,7 +67,7 @@ public class Gui extends JFrame implements Observer {
         private void setPlayerSprite() {
             Toolkit toolkit = Toolkit.getDefaultToolkit();
             Image image = toolkit.getImage("img/Player.png");
-            Cursor c = toolkit.createCustomCursor(image , new Point(this.getX(),
+            Cursor c = toolkit.createCustomCursor(image , new Point(this.getX(),/**/
                     this.getY()), "Player");
             this.setCursor (c);
         }
