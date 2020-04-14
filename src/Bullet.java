@@ -1,5 +1,6 @@
 public class Bullet {
 
+
     private int x;
     private int y;
 
@@ -18,6 +19,22 @@ public class Bullet {
     public void move() {
         x += dx * speed;
         y += dy * speed;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public void setDx(int dx) {
+        this.dx = dx;
+    }
+
+    public void setDy(int dy) {
+        this.dy = dy;
     }
 
     public int getX() {
